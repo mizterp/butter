@@ -23,7 +23,7 @@ def idf(word, documentList):
 */
 var idf = function(word,documentList){
   word_in_doc = parseFloat(numDocsContaining(word,documentList));
-  // if (word_in_doc > 0){
-  //   return Math.log(documentList.length/word_in_doc);
-  // }return 0;
+  if (word_in_doc > 0){
+    return Math.log(documentList.length/word_in_doc);
+  }return 0;
 } 
