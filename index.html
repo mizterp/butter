@@ -20,12 +20,20 @@
 	</style>
 </head>
 <body>
-  <a href="" id="hello" onclick="alert(isStopWord('fat'))">test isStopWord1</a>
+  <a href="" id="hello" onclick="alert(isStopWord('fat'))">test isStopWord1. Ans: false</a>
   <br />
-  <a href="" id="hello" onclick="alert(isStopWord('and'))">test isStopWord2</a>
+  <a href="" id="hello" onclick="alert(isStopWord('and'))">test isStopWord2. Ans: true</a>
   <br />
-  <a href="" id="hello" onclick="alert(wordCount('puss in the boots'))">test word count</a> <!-- 4 -->
+  <a href="" id="hello" onclick="alert(removeStopWords('and i y i y i will always love you i'))">test removeStopWords.  Ans: love</a> <!-- love -->
   <br />
-  <a href="" id="hello" onclick="alert(freq('boots','puss with boots in the boots'))">test freq </a>  <!-- 2 -->
+  <a href="" id="hello" onclick="alert(wordCount('puss in the boots'))">test word count.  Ans 4</a> <!-- 4 -->
+  <br />
+  <a href="" id="hello" onclick="alert(freq('boots','puss with boots in the boots'))">test freq.  Ans: 2</a>  <!-- 2 -->
+  <br />
+  <a href="" id="hello" onclick="alert(numDocsContaining('boots',['i got nottin','i y i e i will always love u boots','puss in the boots']))">test numDocsContaining.  Ans 2</a>  <!-- 2 -->  
+  <br />
+  <a href="" id="hello" onclick="alert(tf('boots','puss in the boots'))">test tf.  Ans 0.25</a>  <!-- 0.25 -->
+
+
 </body>
 </html>
