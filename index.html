@@ -10,8 +10,9 @@
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	  <script src="https://raw.github.com/spatzle/tf-idf_js/master/stopwords.js?login=spatzle&token=5f19b651cd65e54a5cd5f7bf3357d60b"></script>
 	  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
+	  <script src="tfidf.js"></script>
 
-	  
+
 	  
 	<style>
 	  article, aside, figure, footer, header, hgroup, 
@@ -19,9 +20,12 @@
 	</style>
 </head>
 <body>
-  <a href="" id="hello" onclick="alert(isStopWord('fat'))">Hello World</a>
+  <a href="" id="hello" onclick="alert(isStopWord('fat'))">test isStopWord1</a>
   <br />
-
-  <a href="" id="hello" onclick="alert(isStopWord('and'))">Hello World2</a>
+  <a href="" id="hello" onclick="alert(isStopWord('and'))">test isStopWord2</a>
+  <br />
+  <a href="" id="hello" onclick="alert(wordCount('puss in the boots'))">test word count</a> <!-- 4 -->
+  <br />
+  <a href="" id="hello" onclick="alert(freq('boots','puss with boots in the boots'))">test freq </a>  <!-- 2 -->
 </body>
 </html>
