@@ -8,7 +8,7 @@ var removeStopWords = function(words) {
   var cleanWords = [], inputString = false;
 
   // convert types between arrays & strings
-  if (!jQuery.isArray(words)) {
+  if (!$.isArray(words)) {
     words = words.split(' ');
     inputString = true;
   }
