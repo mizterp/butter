@@ -13,7 +13,7 @@ This library has optimized for cooking recipes sites.
 
 ## Thanks
 
-* ported from [my python tf-idf library](https://github.com/spatzle/tf-idf) which was extended from [TimTrueman](https://github.com/timtrueman/tf-idf) w/ the addition of [nltk](http://nltk.org/)
+* ported from [my python tf-idf library](https://github.com/spatzle/tf-idf) which was extended from [TimTrueman's](https://github.com/timtrueman/tf-idf) w/ the addition of [nltk](http://nltk.org/)
 * stemmer - http://qaa.ath.cx/porter_js_demo.html
 * sorting an object - http://wolfram.kriesing.de/blog/index.php/2008/javascript-sort-object-by-a-value
 * stopwords library - http://tedserbinski.com/files/stopwords.js.txt
