@@ -18,7 +18,7 @@ This library has optimized for cooking recipes sites.
 * sorting an object - http://wolfram.kriesing.de/blog/index.php/2008/javascript-sort-object-by-a-value
 * stopwords library - http://tedserbinski.com/files/stopwords.js.txt with extensions for cooking recipe words
 
-Add this to your webpage (change the library paths acorddingly)
+Add this to the head section your webpage (change the library paths acorddingly), to see how it works
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
