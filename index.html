@@ -11,6 +11,7 @@
 	  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
 	  <script src="stopwords.js"></script>
 	  <script src="tfidf.js"></script>
+	  <script src="tokenize.js"></script>
 
 	  <script>
 	  	var docA = ['i','got', 'feeling'];
@@ -31,27 +32,29 @@
 	</style>
 </head>
 <body>
-  <a href="" id="hello" onclick="alert(isStopWord('fat'))">test isStopWord1. Ans: false</a>
+  <a href="" id="hello" onclick="alert(isStopWord('fat'))">test isStopWord1.  </a>
+  <br />
+   <a href="" id="hello" onclick="alert(tokenize('pigs are cute'))">test tokenze.  </a>
   <br />
   <a href="" id="hello" onclick="alert(removeStopWords('and i y i y i will always love you i'))">test removeStopWords.  Ans: love</a> <!-- love -->
   <br />
-  <a href="" id="hello" onclick="alert(wordCount(['puss', 'in', 'the', 'boots']))">test word count.  Ans 4</a> <!-- 4 -->
+  <a href="" id="hello" onclick="alert(wordCount(['puss', 'in', 'the', 'boots']))">test word count.   </a> <!-- 4 -->
   <br />
-  <a href="" id="hello" onclick="alert(freq('boots',['boots', 'in', 'the', 'boots']))">test freq.  Ans: 2</a>  <!-- 2 -->
+  <a href="" id="hello" onclick="alert(freq('boots',['boots', 'in', 'the', 'boots']))">test freq.   </a>  <!-- 2 -->
   <br />
-  <a href="" id="hello" onclick="alert(numDocsContaining('boots',docList))">test numDocsContaining.  Ans 2</a>  <!-- 2 -->  
+  <a href="" id="hello" onclick="alert(numDocsContaining('boots',docList))">test numDocsContaining.   </a>  <!-- 2 -->  
   <br />
-  <a href="" id="hello" onclick="alert(tf('boots',docA))">test tf.  Ans 0.33</a>  <!-- 0.25 -->
+  <a href="" id="hello" onclick="alert(tf('boots',docA))">test tf.  </a>  <!-- 0.25 -->
 	<br />
-  <a href="" id="hello" onclick="alert(idf('boots',docList2))">test idf.  Ans 0.4054...</a>  	
+  <a href="" id="hello" onclick="alert(idf('boots',docList2))">test idf.   .</a>  	
 	<br />
-   <a href="" id="hello" onclick="unique_words = find_unique_words(docList2); alert(unique_words);">test find_unique_words.  Ans 0.4054...</a>  	
+   <a href="" id="hello" onclick="unique_words = find_unique_words(docList2); alert(unique_words);">test find_unique_words.   </a>  	
 
   <br />
-  <a href="" id="hello" onclick="unique_words = find_unique_words(docList2);idfs = calc_idfs(unique_words,docList2);alert(idfs['boots'])">test after calc idfs.  Ans 0.4054...</a>  
+  <a href="" id="hello" onclick="unique_words = find_unique_words(docList2);idfs = calc_idfs(unique_words,docList2);alert(idfs['boots'])">test after calc idfs.  </a>  
 
   <br />
-  <a href="" id="hello" onclick="tfidfs=tfidf_corpus(docList2);alert(tfidfs['boots'])">test tfidfs on corpus.  Ans 0.4054...</a> 
+  <a href="" id="hello" onclick="tfidfs=tfidf_corpus(docList2);alert(tfidfs['boots'])">test tfidfs on corpus.   </a> 
 
 </body>
 </html>

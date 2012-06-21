@@ -1,4 +1,3 @@
-// var sets = require('lib/simplesets');
 
 
 var wordCount = function(document) {
