@@ -41,6 +41,8 @@ Add this to the head section your webpage (change the library paths acorddingly)
     	});
   </script>
 
+## BUG
+* I think the tfidf_corpus function in tfidf.js is wrong, it should be all the tfs of a word wrt to a doc squared, and then take all the docs, sum them & sqrt them... in construction!
 
 ## TODO
 
