@@ -5,6 +5,9 @@ This is useful for looking at the top (most frequent words on a webpage)
 This library has optimized for cooking recipes sites. 
 
 
+## BUG... in construction
+* I think the tfidf_corpus function in tfidf.js is wrong, it should be all the tfs of a word wrt to a doc squared, and then take all the docs, sum them & sqrt that...
+
 ## Requirements
 
 * jquery https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
@@ -41,8 +44,6 @@ Add this to the head section your webpage (change the library paths acorddingly)
     	});
   </script>
 
-## BUG
-* I think the tfidf_corpus function in tfidf.js is wrong, it should be all the tfs of a word wrt to a doc squared, and then take all the docs, sum them & sqrt them... in construction!
 
 ## TODO
 
