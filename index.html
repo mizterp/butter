@@ -12,6 +12,8 @@
 	  <script src="stopwords.js"></script>
 	  <script src="tfidf.js"></script>
 	  <script src="tokenize.js"></script>
+	  <script src="corpus_tools.js"></script>
+	  <script src="lib/stemmer-min.js"></script>
 
 	  <script>
 	  	var docA = ['i','got', 'feeling'];
@@ -24,6 +26,8 @@
 	  	var tfidfs={};
 	  	var unique_words = [];
 
+	  	
+
 	  </script>
 	  
 	<style>
@@ -32,11 +36,15 @@
 	</style>
 </head>
 <body>
+	 <a href="" id="hello" onclick="alert(stemmer('delicious'))">test stemmer.  </a>
+  <br />
   <a href="" id="hello" onclick="alert(isStopWord('fat'))">test isStopWord1.  </a>
   <br />
    <a href="" id="hello" onclick="alert(tokenize('rabbits are cute'))">test tokenze.  </a>
   <br />
   <a href="" id="hello" onclick="alert(removeStopWords('and i y i y i will always love you i'))">test removeStopWords.  Ans: love</a> <!-- love -->
+  <br />
+  <a href="" id="hello" onclick="alert(removeStopWords(docA))">test removeStopWords2.  Ans: feeling</a> <!-- love -->
   <br />
   <a href="" id="hello" onclick="alert(wordCount(['puss', 'in', 'the', 'boots']))">test word count.   </a> <!-- 4 -->
   <br />
@@ -55,6 +63,8 @@
 
   <br />
   <a href="" id="hello" onclick="tfidfs=tfidf_corpus(docList2);alert(tfidfs['boots'])">test tfidfs on corpus.   </a> 
+ <br />
+  <a href="" id="hello" onclick="tokens=clean_up_document('and i y i y i will always love you feelings!');alert(tokens)">test cleaned up doc.   </a> 
 
 </body>
 </html>
