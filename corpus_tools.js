@@ -16,6 +16,7 @@ var accentsTidy = function(s){
         return r;
 };
 
+
 var prepare_doc = function(document_string){
 
   	// tokenize
@@ -36,3 +37,11 @@ var prepare_docs = function(docs){
 	prepped= _.map(docs, function(doc){return prepare_doc(doc) });
 	return prepped;
 }
+
+var prepare_corpus = function(str){
+	// split into sentences
+	splitted_by_sentence = str.split(/[.|!|?]\s/gi);
+	return splitted_by_sentence;
+}
+
+
