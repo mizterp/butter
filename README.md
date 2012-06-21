@@ -6,7 +6,8 @@ This library has optimized for cooking recipes sites.
 
 
 ## BUG... in construction
-* I think the tfidf_corpus function in tfidf.js is wrong, it should be all the tfs of a word wrt to a doc squared, and then take all the docs, sum them & sqrt that...
+* For this to work on the whole corpus, the 'corpus' being all the text lines for the webpage in question, the tfidf.js script is not accurrate.
+* the tfidf_corpus function in tfidf.js is wrong, it should be all the tfs of a word wrt to a doc squared, and then take all the docs, sum them & sqrt that...
 
 ## Requirements
 
