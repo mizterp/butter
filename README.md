@@ -1,4 +1,8 @@
-tf-idf in javasript
+# tf-idf in javasript
+
+This is useful for looking at the top (most frequent words on a webpage)
+
+This library is optimized for cooking recipes sites. 
 
 
 * a script to remove stopwords http://tedserbinski.com/files/stopwords.js.txt 
