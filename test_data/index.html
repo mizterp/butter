@@ -28,6 +28,10 @@
 			s = sortObj(tfidfs);
 			return s;
 		}
+		$(function() {
+            var corpus  = document.title
+            // alert(corpus);
+        });
 	  </script>
 	<style>
 	  article, aside, figure, footer, header, hgroup, 
@@ -77,7 +81,7 @@
   <a href="" id="hello" onclick="p=prepare_corpus(docList5);alert(p);">test preparing corpus.   </a> 
 
   <br />
-  <a href="" id="hello" onclick="sortKeywords = analyze_web_text(docList5);alert(docList5);alert(sortKeywords);">test getting top keywords from a corpus.   </a> 
-
+  <a href="" id="hello" onclick="sortKeywords = analyze_web_text(docList5);alert(docList5);alert(sortKeywords);">test getting top keywords from a corpus.   </a>  
+   <br />
 </body>
 </html>
