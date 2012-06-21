@@ -38,8 +38,11 @@ var isStopWord = function(word) {
   return (jQuery.inArray(word, stopWords) > -1);
 };
 
+
+
 // list of words from: http://groups.drupal.org/node/16760
 var stopWords = [
+'prinkl','sprinkl','paper','crookneck','digit','season','june','may','july','august','september','october','kitchen','heavyduti','easil','easy','hard','mixtur','yield','appetit','inc','befor','slide','nutrit','activ','ani','quick','quickdish','among','crimp','four','summer','winter','fall','spring','autum','halloween','christmas','meal','lunch','dinner','snack','pan','pattypan','wine','ground','hour','atop','analysi','provid','cut','fiber','steam','escap','larg','before','temperatur','continu','right','dri','plu','use','seal','crim','mistur','ounc','drizzl','surfac','work','altern','calori','form','edg','amoung','toothpick','oven','made','portion','place','stand','chill','room','ahead','equal','yellow','garnish','g','c','f','x','fat','all','rights','reserv','open','cook','slid','singl','build','fire','charcoal','doubl','divid','assort','ga','poke','water','salt','pepper','add','around','foil','side','test','taste','make','amoung','one','two','three','arrang','half','halv','leav','medium','fresh','heat','cold','layer','rim','serv','tablespoon','teaspoon','per','bake','grill','stir','parchment','thi','cup','sheet','slice','packet','thin','minut','second','let','oil','pepper','white','black',
   'a',
   'able',
   'about',
