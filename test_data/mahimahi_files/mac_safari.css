@@ -1,0 +1,185 @@
+@media screen {
+/****************************************
+ * Epicurious.com
+ * Mac Safari CSS Overrides
+ * esmiling 20070613
+ ****************************************/
+
+/*
+ * Description: All Mac Safari specific overrides can be found here
+ */
+  
+/********* extends: /styles/recipes/recipe_detail.css *********/
+div#reviews{margin-top: 40px;}
+div.review_id_div input{top: 0;}
+div.pagination{ left: 1px;bottom: -1px;}
+div#recipe_nav div#registerLogin{left: 145px;}
+button.rate_review_btn {padding-bottom:1px;padding-top:0px;}
+/* end recipe detail overrides */
+
+/********* extends: /styles/main.css **********/
+a#section_search_button, a.frm_ib_button{position: relative;top: 2px;}
+label#rc_epirec{margin-left: 98px;}
+div#frm_recipe_forums {margin-top: 15px;}
+
+/* recipe central */
+div.viewpane_content{filter: alpha(opacity: 0);moz-opacity: 0;opacity: 0;}
+/*end recipe central*/
+
+/*related content*/
+div#rcm_content{height: 230px;}
+/*end related content*/
+
+/* end main css overrides*/
+
+/********* extends: /styles/rounder2.css **********/
+div#recipe_of_the_day_content{height: 120px;}
+div#promo_epivideo{height: 100px;}
+/* end rounder2.css overrides*/
+
+
+/********* extends: /styles/homepage/epi_home.css *********/
+div#sign_in_form form{ padding-bottom: 10px;height: 150px;}
+/* end homepage overrides*/
+
+/********* extends: /styles/articles/general.css **********/
+/* .dropCapFirst {float:none; float:left not working with multiple left floats} */
+/* end articles overrides*/
+
+#rbTabs {float: left;}
+
+/******** extends: /styles/recipesmenus/recipesmenus.css ********/
+div.pagetabs {top: -30px}
+
+/******** extends: /styles/community/landing.css ********/
+div.mrm_recipe_group{
+    filter: alpha(opacity: 0);
+    moz-opacity: 0;
+    opacity: 0;
+}
+
+/********* extends: /styles/articlesguides/archive.css **********/
+div.see_latest_dropdiv{margin-bottom: 3px;}
+}
+
+/********* extends: /styles/popups/popup.css **********/
+div#leftCol { width:521px; }
+
+/***************************************************
+ hacks for printer friendly nonesense
+ ***************************************************/
+@media print {
+    #prnttxt table {
+        height:600px !important;
+        margin-top:-30px;
+    }
+    
+    div#prnttxt {
+        margin-top:-5px;
+    }
+    
+    div#prepDiv, .prepDiv {
+      /*  margin-bottom:10px; */
+    }
+    div.mainDottedDiv {
+        margin-top:6px;
+    }
+    p#copyright {
+       /* margin-top:-1px; */
+    }
+    .card2 {
+        margin-bottom:15px !important;
+    }
+    
+    div.mainDottedDiv {
+        heigh:auto;
+/*        height:700px; */
+        top:30px;
+    }
+}
+
+/**********************************************************
+    hacks for myepi2 stuff
+**********************************************************/
+/*** Coments ***/
+button.post {width:54px;height:17px;}   
+#comment {width:420px;}
+/*a.clearer {position:relative;top:-8px;left:2px;} **/
+div#formBox button { margin:0px;}
+div#rbSortNav a#nameTab {width:282px;}
+div#rbSortNav{z-index:0;}
+/*	--- Become A Fan ---  */    
+div#becomeafantile {padding:10px 5px 10px 5px;}
+
+/* Find Members */
+div#browseByTagLeft div#selections button {background-position: 0 10px;}
+div#browseByTagLeft form button {padding-top:2px; padding-left:11px;}
+
+/* tabs on the right side of profile template */
+div#profile_tabs ul {width:630px;}
+div#profile_tabs ul li#edit_settings {float:right !important;}
+/* user bar on profile page */
+div#user_bar ul li a#rbLnk {padding-top:1px;}
+
+#cancelBtn { background-position: 0 4px;  margin:0; background-color:#ffffff;}
+
+/* overrides for home_page2.css */
+img.bgtrick {bottom:0px;left:176px;}
+div#HProw_re img.bgtrick {bottom:-73px;}
+div#HProw_rm img.bgtrick {bottom:-292px;}
+div#promo_dictionaries{padding:10px 13px 10px 7px;}
+    
+/* search2 stuff */
+div#sr_tabs ul {width:440px;}
+div#sr_top form button {top:-2px;text-align:center;} 
+div#global_search button#gs_dropdown {margin:0;position:relative;left:4px;top:0px;cursor:pointer;}
+div#global_search input{margin:0px;}
+div#global_search ul#search_section_droplist{margin-top:0px;top:-5px;left:1px;}
+div#global_search ul#search_section_droplist li img{top:-22px;}
+div.sr_left div#searchwithinresults form input{height:16px;}
+div.sr_left div#searchwithinresults form button {text-align:center;position:relative;top:-1px;}
+div#section_search select#section_search_select{margin-top:4px;}
+div#sr_top p{margin-bottom:0px;}
+div#sr_top p span#foodrecipes {padding:5px 11px 12px 10px;}
+div#sr_top p span#drinkrecipes{padding:5px 11px 12px 11px;}
+div#sr_top p span#membersrecipes{padding:5px 11px 12px 9px;}
+div#sr_top p span#allrecipes{padding:5px 11px 12px 11px;margin-left:3px;}
+
+
+
+
+
+
+/***************************************************
+ footer
+
+
+ form#condenet_sites_dropdown{
+    margin-top: 65px;
+    margin-left: 200px;
+}
+form#condenet_sites_dropdown select{
+    width: 190px;
+    font-size: 10px;
+}
+div#related_sites ul#condenet_sites li{
+    display: inline;
+	font-size: 10px;
+}
+ ***************************************************/
+/**************************************************
+RecipeBox
+***************************************************/
+
+button#createFolderBtn {
+    background:transparent url(/rd_images/community/rb_createfolder_btn.gif) no-repeat;
+    width:98px;
+	height:24px;
+	padding-bottom:3px;
+	line-height:18px;
+	vertical-align:middle;
+	margin:12px 3px 0px 0px; 
+    text-align:center; 
+    padding-left:2px;
+}
+

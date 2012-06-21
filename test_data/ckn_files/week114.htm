@@ -1,0 +1,186 @@
+
+<!-- saved from url=(0067)http://www.epicurious.com/services/poll-cache/rightrailpoll/week114 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head><body><table border="0" cellpadding="0" cellspacing="0">
+	<tbody><tr valign="top">
+	
+		
+		
+		
+		
+		
+		<!-- ========== defined column 0 = 100% ========================= -->
+		<td valign="top" width="100%" class="bodyedit">
+  			
+    			
+  			
+
+
+
+
+
+
+
+<!-- vlayout -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					
+
+
+	
+	<tbody><tr>
+		<td class="/WEB-INF/pages/tiles/quizPollIncluder-jsp">
+
+
+
+ 
+<style>
+.qpWrapper {margin: 10px;}
+.pollQuestionText {font-family: Georgia, "Times New Roman", Times, serif; font-size: 13px; color: #333333; font-weight: bold;line-height: 22px}
+.pollQuestion {margin: 0 0 15px 0;}
+.pollAnswer {margin: 6px 0; font-family: "Lucida Grande", Arial, Verdana, sans-serif; font-size: 13px; color: #666666;}
+.QPintro {font-family: Georgia, "Times New Roman", Times, serif; font-size: 13px; color: #333333;}
+.QPresults {font-family: Georgia, "Times New Roman", Times, serif; font-size: 13px; color: #333333; font-weight: bold;}
+.resultsWrapper {margin: 10px;}
+.pollQuestion {margin: 0 0 9px 0; font-family: Georgia, "Times New Roman", Times, serif; font-size: 13px; color: #333333; font-weight: bold;}
+.genAnswer {margin: 1px 0; font-family: "Lucida Grande", Arial, Verdana, sans-serif; font-size: 13px; color: #666666;}
+.submitBox {margin-top: 18px;}
+.resultBox {background-color: #e1e1e1;}
+.yourAnswer {margin: 1px 0; font-family: "Lucida Grande", Arial, Verdana, sans-serif; font-size: 13px; color: #4679ba;}
+.answerBottom {margin: 15px 0; font-family: "Lucida Grande", Arial, Verdana, sans-serif; font-size: 13px; color: #333333; font-weight: bold;}
+.formError p { font-family: "Lucida Grande", Arial, Verdana, sans-serif; font-size: 11px; font-weight:bold; margin-top:-5px; color: #cc0000;}
+.percentage {margin-bottom: 10px;}
+.percentbold {font-weight: bold;}
+.answerSection {line-height:20px;}
+.hidden {display: none;}
+.errorcopy {font-family: "Lucida Grande", Arial, Verdana, sans-serif; font-size: 11px; font-weight:bold; color: #cc0000;}
+</style>
+<!--  -->
+<div class="qpWrapper">
+<!-- 
+
+
+ 
+-->
+<div class="formError hidden" id="qpError">
+    <p class="errorcopy">Please select an option to vote.</p>
+</div>
+<form method="post" id="rightRailQuiz">
+    <!-- Toolkit Context Information captured on form submission for toolkit -->
+    <input type="hidden" name="toolkit.application" value="quizpoll">
+    <input type="hidden" name="toolkit.applicationId" value="">
+    <input type="hidden" name="formName" value="questionForm">
+    <input type="hidden" name="partnerCode" value="">
+    <input type="hidden" name="sourceCode" value="">
+<div class="qpWrapperInt">
+    
+<div class="questionWrapper">
+        
+            <div class="pollQuestion">
+        <!-- <div class="pollQuestionNum">1</div> -->
+        <div class="pollQuestionText">What is your favorite type of food to grill on the 4th of July?         
+        <input type="hidden" name="selections[1].questionOrdinal" value="1">
+        </div>
+        <div class="clearDiv"><!-- --></div>
+            </div>
+        
+            <div class="answerSection">
+            
+            
+                
+
+                
+
+            
+                
+
+                
+                
+                
+                    <div class="pollAnswer">
+
+                        
+                            
+                            
+                               
+                               
+                                <input type="radio" name="selections[1].choiceOrdinals" value="1">
+                               
+                
+                                Beef (burgers or steaks)                            
+                        
+                    </div>
+                
+                    <div class="pollAnswer">
+
+                        
+                            
+                            
+                               
+                               
+                                <input type="radio" name="selections[1].choiceOrdinals" value="2">
+                               
+                
+                                Pork (ribs or sausage)                            
+                        
+                    </div>
+                
+                    <div class="pollAnswer">
+
+                        
+                            
+                            
+                               
+                               
+                                <input type="radio" name="selections[1].choiceOrdinals" value="3">
+                               
+                
+                                Veggies (corn or zucchini)                            
+                        
+                    </div>
+                
+                
+
+            
+            </div>
+</div> <!-- end of questionWrapper -->
+        
+</div> <!-- end of qpWrapperInt -->
+    <div class="submitBox">
+    <input type="image" alt="Submit" name="_eventId_submit" src="epi_poll_vote.jpg" class="QPsubmit" value="Submit">
+    </div>
+
+</form>
+</div> <!-- end of qpWrapper -->
+
+<script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script type="text/javascript">
+	jQuery('#rightRailQuiz').submit(function() {
+		var questionNames = [];
+		jQuery('#rightRailQuiz input:radio').each(function() {
+			if (jQuery.inArray(this.name, questionNames) === -1 ) {
+				questionNames.push(this.name);
+			}
+		});
+		
+		var allQuestionsAnswered = true;
+		jQuery.each(questionNames, function(index, questionName) {
+			if (!jQuery('#rightRailQuiz input:radio[name=' + questionName + ']:checked').val()) {
+				allQuestionsAnswered = false;
+				jQuery('#qpError').removeClass('hidden');
+			}
+			return allQuestionsAnswered;
+		});
+		return allQuestionsAnswered;
+	});
+</script></td>
+	</tr>
+
+</tbody></table>
+<!-- vlayout -->
+
+		</td>
+		
+	
+	</tr>
+</tbody></table>
+
+<!-----PAGE WELL ENDS-----></body></html>

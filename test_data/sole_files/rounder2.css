@@ -1,0 +1,256 @@
+/***************************
+* Rounding System Components
+****************************/
+
+/* Default for Target Divs
+   -----------------------*/
+.rounded{
+    border-width: 1px;
+    border-style: solid;
+}
+
+/* Border Containers
+   ------------------ */
+.r_header, .r_footer{
+    position: absolute;
+    overflow: hidden;
+}
+.r_header{
+    top: -2px;
+    left: -1px;
+}
+.r_footer{   
+    bottom: -2px;
+    left: -1px;
+}
+
+/* Drawn Borders    Note: Border colors will be read and set
+   ------------- */
+   
+.r_header span, .r_footer span, span.drop_shadow{
+    display: block;
+    height: 1px;
+    overflow: hidden;
+}
+.r_header span.top_border{
+    margin: 0 1px 0 1px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+.r_footer span.bottom_border{
+    margin: 0 1px 0 1px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.r_header span.top_gradient{
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+.r_footer span.bottom_gradient{
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+.dropshadowed > .r_footer{
+    border-bottom: 1px solid #ecebe6;
+}
+/*end rounding system components*/
+
+
+
+
+
+/*****************************************************************************
+* Rounder 2.0 CSS overrides - to be merged into respective sheets after update
+******************************************************************************/
+/* MAIN CSS
+   -------- */
+/*main css: line 878*/
+.tabbed ul.tabnav a.active {
+    top: -1px;
+}
+/*main.css: line 362*/
+.content_unit{
+    margin-bottom: 11px;
+}
+
+/*main.css: line 383*/
+.modular{
+    margin-bottom: 14px;
+}
+/*main.css: line 428*/
+.module{
+    margin-bottom: 10px;
+}
+/*main.css (line 266)*/
+#primary_content {
+    margin-bottom: 7px;
+}
+/*main css (line 443)*/
+secondary_nav_box{
+    margin-top: 12px;
+}
+/*header.css*/
+#headerContainer{
+    margin-bottom: 9px;
+}
+/*main.css: line 187*/
+#common_tools{
+    height: 18px;
+    margin-top: 2px;
+}
+#common_tools .r_footer{
+    display: none;
+}
+
+/* TOOLS.CSS
+   --------- */
+/*tools (line 816)*/
+#nav_box {
+    margin-bottom: 14px;
+}
+/*tools (line 1040)*/
+.tl_tlThumb_cont {
+    margin-bottom: 19px !important;
+}
+/*embedded css on newsletters page*/
+#article_nav {
+    top: 1px !important;
+}
+/*tools.css (line 1)*/
+#col1, #col2{
+    margin-top: 2px;
+}
+/*overrides embedded css on help page*/
+#leftrail, #maincontent{
+    margin-top: 2px;
+}
+
+
+/* HOME CSS
+   -------- */
+#epicurious_tip{
+    margin-top: 7px;
+}
+
+
+/* RECIPESMENUS CSS
+   ---------------- */
+/*recipesmenus/recipesmenus.css: line 125*/
+#quick_links_box{
+    margin-top: 14px;
+}
+#rm_nav_box{
+    margin-bottom: 12px;
+}
+#pcontent_col1, #pcontent_col2{
+    margin-top: 2px;
+}
+#all_holidays_box{
+    margin-top: 2px;
+    /*height: 1040px; safari fix*/
+}
+
+
+/* ARCHIVE CSS
+   ----------- */
+/*archive.css (line 528)*/
+.article_result_container {
+    margin-bottom: -3px;
+}
+/*archive.css (line 16)*/
+.left_rail_container {
+    margin-top: 2px;
+}
+#articlesguides_box{
+    margin-top: 2px;
+}
+/*archive.css (line 540)*/
+.sub_cat{
+    margin-bottom: 14px;
+    padding-bottom:2px;
+}
+
+/*archive.css (line 35)*/
+#secondary_nav_box {
+    margin-top: 14px;
+}
+#recipe_menus_main{
+    margin-top: 2px;
+}
+   
+/* SEARCH_RESULTS CSS
+   ------------------ */
+/*tools/search_results.css:*/
+#searchWithin, #numberResults, #sortby, #otherSearchOptions, #tableWrap{
+    border: 1px solid #cccccc;
+}
+#searchWithin, #numberResults, #sortby{
+    margin-bottom: 14px;
+}
+   
+/*Misc:*/
+#newsletter_section{
+    padding-bottom: 3px;
+}
+
+/* IMAGE HEIGHTS FOR SAFARI
+   ------------------------ */
+/*myepi/myprofile: profile.css*/
+#what-im-cooking-now{
+    height: 200px;
+}
+#view-about-me img, #change-wicn img{
+    height: 19px;
+}
+/*registration.css (line 765)*/
+#accountInfo img, #communications img{
+    height: 53px;
+}
+/* overrides embedded css on tools landing page*/
+.tl_tlThumb img{
+    height: 120px;
+}
+/*recipesmenus.css: epicurious tv landing page*/
+.menu_img_container img{
+    height: 116px;
+}
+.recipe_result_right img{
+    height: 23px;
+}
+/*recipesmenus.css: holidays celebrations landing page*/
+#all_holidays_box img{
+    height: 25px;
+}
+
+#ba_sub_offer{
+    margin-bottom: 8px;
+}
+#sweepstakes{
+    margin-top: -2px;
+}
+.home #section_search{
+    width: 636px;
+}
+#sign_in_module{
+    padding-top: 6px;
+    padding-bottom: 2px;
+}
+#rc_viewpane{
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+#promo_epivideo{
+    padding-top: 4px;
+}
+/*popup.css*/
+#textad{
+    margin-top: 6px;
+}
+#slide_control_container{
+    margin-top: 4px;
+}
+#poll_booth_module .poll_ad {
+margin-left:215px;
+margin-top:0;
+}
