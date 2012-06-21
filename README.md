@@ -1,4 +1,4 @@
-# tf-idf in JavaScript
+# [tf-idf](http://en.wikipedia.org/wiki/Tf*idf) in JavaScript
 
 This is useful for looking at the top (most frequent words on a webpage)
 
@@ -44,4 +44,5 @@ Add this to your webpage (change the library paths acorddingly)
 
 ## TODO
 
-create a GreaseMonkey / Chrome Extension
+* highly inadequate unittests
+* create a GreaseMonkey / Chrome Extension
