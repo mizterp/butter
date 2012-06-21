@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>JS Bin</title>
+	<!--[if IE]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	  
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
+	  <script src="../lib/stopwords.js"></script>
+	  <script src="../lib/tfidf.js"></script>
+	  <script src="../lib/tokenize.js"></script>
+	  <script src="../lib/corpus_tools.js"></script>
+	  <script src="../lib/collections_tools.js"></script>
+	  <script src="../lib/stemmer-min.js"></script>
+	  <script src="../test_data/test_data.js"></script>
+
+	  <script>
+	  	var idfs = {};
+	  	var tfidfs={};
+	  	var unique_words = [];
+		var maxSpeed = {car:300, bike:60, motorbike:200, airplane:1000,    helicopter:400, rocket:8*60*60}
+	  	
+	  	var analyze_web_text = function(corpus){
+			tfidfs = tfidf_corpus(prepare_docs(prepare_corpus(corpus)));
+			s = sortObj(tfidfs);
+			return s;
+		}
+	  </script>
+	<style>
+	  article, aside, figure, footer, header, hgroup, 
+	  menu, nav, section { display: block; }
+	</style>
+</head>
+<body>
+	 <a href="" id="hello" onclick="alert(stemmer('delicious'))">test stemmer.  </a>
+  <br />
+  <a href="" id="hello" onclick="alert(isStopWord('fat'))">test isStopWord1.  </a>
+  <br />
+   <a href="" id="hello" onclick="alert(tokenize('rabbits are cute'))">test tokenze.  </a>
+  <br />
+  <a href="" id="hello" onclick="alert(removeStopWords('and i y i y i will always love you i'))">test removeStopWords.  Ans: love</a> <!-- love -->
+  <br />
+  <a href="" id="hello" onclick="alert(removeStopWords(docA))">test removeStopWords2.  Ans: feeling</a> <!-- love -->
+  <br />
+  <a href="" id="hello" onclick="alert(wordCount(['puss', 'in', 'the', 'boots']))">test word count.   </a> <!-- 4 -->
+  <br />
+  <a href="" id="hello" onclick="alert(freq('boots',['boots', 'in', 'the', 'boots']))">test freq.   </a>  <!-- 2 -->
+  <br />
+  <a href="" id="hello" onclick="alert(numDocsContaining('boots',docList))">test numDocsContaining.   </a>  <!-- 2 -->  
+  <br />
+  <a href="" id="hello" onclick="alert(tf('boots',docA))">test tf.  </a>  <!-- 0.25 -->
+	<br />
+  <a href="" id="hello" onclick="alert(idf('boots',docList2))">test idf.   .</a>  	
+	<br />
+   <a href="" id="hello" onclick="unique_words = find_unique_words(docList2); alert(unique_words);">test find_unique_words.   </a>  	
+
+  <br />
+  <a href="" id="hello" onclick="unique_words = find_unique_words(docList2);idfs = calc_idfs(unique_words,docList2);alert(idfs['boots'])">test after calc idfs.  </a>  
+
+  <br />
+  <a href="" id="hello" onclick="tfidfs=tfidf_corpus(docList2);alert(tfidfs['boots'])">test tfidfs on corpus.   </a> 
+ <br />
+  <a href="" id="hello" onclick="tokens=prepare_doc('and i y i y i will always love you feelings!');alert(tokens)">test cleaned up doc.   </a> 
+ <br />
+  <a href="" id="hello" onclick="prepped=prepare_docs(docList3);alert(prepped)">test cleaned up corpus.   </a> 
+
+   <br />
+  <a href="" id="hello" onclick="tfidfs=tfidf_corpus(prepare_docs(docList3));alert(tfidfs['bok'])">test tfidfs on corpus docList3.   </a>    
+  <br />
+  <a href="" id="hello" onclick="s = sortObj(maxSpeed);alert(s);">test sorting object.   </a> 
+  <br />
+  <a href="" id="hello" onclick="tfidfs=tfidf_corpus(prepare_docs(docList4));s = sortObj(tfidfs);alert(s);">test sorting object2.   </a> 
+  <br />
+  <a href="" id="hello" onclick="p=prepare_corpus(docList5);alert(p);">test preparing corpus.   </a> 
+
+  <br />
+  <a href="" id="hello" onclick="sortKeywords = analyze_web_text(docList5);alert(docList5);alert(sortKeywords);">test getting top keywords from a corpus.   </a> 
+
+</body>
+</html>
