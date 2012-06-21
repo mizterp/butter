@@ -44,5 +44,5 @@ Add this to the head section your webpage (change the library paths acorddingly)
 
 ## TODO
 
-* highly inadequate unittests
+* wholly inadequate testing :'(
 * create a GreaseMonkey / Chrome Extension
