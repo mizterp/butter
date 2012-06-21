@@ -6,4 +6,5 @@ made with
 # underscoreJS http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js 
 # python tf-idf w/ nltk https://github.com/spatzle/tf-idf
 # stemmer - http://qaa.ath.cx/porter_js_demo.html
+# sorting - http://wolfram.kriesing.de/blog/index.php/2008/javascript-sort-object-by-a-value
 

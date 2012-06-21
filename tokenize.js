@@ -1,4 +1,4 @@
-
+		
 var fulltrim=function(wd){return wd.replace(/(?:(?:^|\n)\s+|\s+(?:$|\n))/g,'').replace(/\s+/g,' ');}
 
 var remove_punctuations = function(s){
