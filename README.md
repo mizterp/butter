@@ -16,7 +16,7 @@ This library has optimized for cooking recipes sites.
 * ported from [my python tf-idf library](https://github.com/spatzle/tf-idf) which was extended from [TimTrueman's](https://github.com/timtrueman/tf-idf) w/ the addition of [nltk](http://nltk.org/)
 * stemmer - http://qaa.ath.cx/porter_js_demo.html
 * sorting an object - http://wolfram.kriesing.de/blog/index.php/2008/javascript-sort-object-by-a-value
-* stopwords library - http://tedserbinski.com/files/stopwords.js.txt
+* stopwords library - http://tedserbinski.com/files/stopwords.js.txt with extensions for cooking recipe words
 
 Add this to your webpage (change the library paths acorddingly)
 
