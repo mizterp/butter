@@ -4,6 +4,9 @@ This is useful for looking at the top (most frequent words on a webpage)
 
 This library has optimized for cooking recipes sites. 
 
+## more info
+This library doens't need to make use of recipes microformat to work, but if you would like more info
+[Recipes Microformat](http://microformats.org/wiki/hrecipe)
 
 ## Requirements
 
@@ -41,8 +44,6 @@ Add this to the head section your webpage (change the library paths acorddingly)
     	});
   </script>
 
-
 ## TODO
 
-* wholly inadequate testing :'(
 * create a GreaseMonkey / Chrome Extension
