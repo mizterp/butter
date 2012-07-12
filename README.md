@@ -5,10 +5,6 @@ This is useful for looking at the top (most frequent words on a webpage)
 This library has optimized for cooking recipes sites. 
 
 
-## BUG... in construction
-* For this to work on the whole corpus, the 'corpus' being all the text lines for the webpage in question, the tfidf.js script is not accurrate.  This is of course not how tf-idf is normally used.
-* the tfidf_corpus function in tfidf.js is wrong, it should be all the tfs of a word wrt to a doc squared, and then take all the docs, sum them & sqrt that...
-
 ## Requirements
 
 * jquery https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
