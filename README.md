@@ -20,6 +20,7 @@ This library doens't need to make use of recipes microformat to work, but if you
 * stemmer - http://qaa.ath.cx/porter_js_demo.html
 * sorting an object - http://wolfram.kriesing.de/blog/index.php/2008/javascript-sort-object-by-a-value
 * stopwords library - http://tedserbinski.com/files/stopwords.js.txt with extensions for cooking recipe words
+* fast dictionary look up js - http://stevehanov.ca/blog/index.php?id=120
 
 Add this to the head section your webpage (change the library paths acorddingly), to see how it works
 
@@ -54,3 +55,7 @@ Add this to the head section your webpage (change the library paths acorddingly)
 ## TODO
 
 * create a GreaseMonkey / Chrome Extension
+
+## resources
+
+* [food ingredients dictionary](http://www.gourmetsleuth.com/Dictionary.aspx)
