@@ -23,6 +23,8 @@ This library doens't need to make use of recipes microformat to work, but if you
 
 Add this to the head section your webpage (change the library paths acorddingly), to see how it works
 
+## To Test this
+
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
       <script src="../lib/stopwords.js"></script>
