@@ -40,11 +40,11 @@ Add this to the head section your webpage (change the library paths acorddingly)
           // if($('li.ingredient.type').length>0){
           //  alert(getTextNodesIn('.ingredient.type').text());
           // }
-          if($('li.ingredient').length>0){
+          if($('li.ingredient').length>0){ // here use recipes microformats
             var items = getTextNodesIn('li.ingredient').text()
             alert(items);
           }
-          else{
+          else{ // don't use recipes microformat, scan the whole text
             corpus  = getTextNodesIn('div').text();
             alert(analyze_web_text(corpus));
           }
