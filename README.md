@@ -59,3 +59,7 @@ Add this to the head section your webpage (change the library paths acorddingly)
 ## resources
 
 * [food ingredients dictionary](http://www.gourmetsleuth.com/Dictionary.aspx)
+ 
+
+## Licence
+LGPL V3
