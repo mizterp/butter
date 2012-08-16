@@ -62,4 +62,4 @@ Add this to the head section your webpage (change the library paths acorddingly)
  
 
 ## Licence
-MIT
+[MIT](http://joyce.mit-license.org/)
