@@ -1,4 +1,4 @@
-# [tf-idf](http://en.wikipedia.org/wiki/Tf*idf) in JavaScript by Joyce Chan
+# [tf-idf](http://en.wikipedia.org/wiki/Tf*idf) in JavaScript 
 
 This is useful for looking at the top (most frequent words on a webpage)
 
