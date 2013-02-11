@@ -2,7 +2,7 @@
 
 This is useful for looking at the top (most frequent words on a webpage)
 
-This library has optimized for cooking recipes sites. 
+This library was made recognizing cooking ingredients from recipes web sites.  You can modify it to be used in other domains.
 
 ## more info
 This library doens't need to make use of recipes microformat to work, but if you would like more info
