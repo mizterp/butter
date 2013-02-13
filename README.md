@@ -3,9 +3,9 @@
 
 [![Butter](https://raw.github.com/spatzle/butter/master/butter.jpg)]()
 
-This is useful for looking at the top (most frequent words on a webpage)
+## Purpose
 
-This library was made recognizing cooking ingredients from recipes web sites.  You can modify it to be used in other domains.
+This is a javascript library that can be used for finding out (the most frequently used words on a webpage using tf-idf).   It was initially made for recognizing cooking ingredients from recipes web sites, please modify for use in other domains.
 
 ## more info
 This library doens't need to make use of recipes microformat to work, but if you would like more info
