@@ -1,5 +1,5 @@
 # Butter 
-## A [tf-idf](http://en.wikipedia.org/wiki/Tf*idf) JavaScript library
+### A [tf-idf](http://en.wikipedia.org/wiki/Tf*idf) JavaScript library
 
 [![Jruby Sinatra Opennlp](https://raw.github.com/spatzle/butter/master/butter.jpg)]()
 
