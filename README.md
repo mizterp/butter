@@ -3,23 +3,20 @@
 
 [![Butter](https://raw.github.com/spatzle/butter/master/butter.jpg)]()
 
-## Purpose
+### Purpose
 
 This is a javascript library that can be used for finding out (the most frequently used words on a webpage using tf-idf).   It was initially made for recognizing cooking ingredients from recipes web sites, please modify for use in other domains.
 
-## more info
-This library doens't need to make use of recipes microformat to work, but if you would like more info
-[Recipes Microformat](http://microformats.org/wiki/hrecipe)
 
-## Requirements
+### Requirements
 
 * jquery https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 * underscoreJS http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js 
 
 
-## Thanks
+### Thanks
 
-* ported from [my python tf-idf library](https://github.com/spatzle/tf-idf) which was extended from [TimTrueman's](https://github.com/timtrueman/tf-idf) w/ the addition of [nltk](http://nltk.org/)
+* ported from [my python tf-idf library](https://github.com/spatzle/tf-idf) which was extended from [TimTrueman's](https://github.com/timtrueman/tf-idf) but w/ the addition of [nltk](http://nltk.org/)
 * stemmer - http://qaa.ath.cx/porter_js_demo.html
 * sorting an object - http://wolfram.kriesing.de/blog/index.php/2008/javascript-sort-object-by-a-value
 * stopwords library - http://tedserbinski.com/files/stopwords.js.txt with extensions for cooking recipe words
@@ -27,7 +24,7 @@ This library doens't need to make use of recipes microformat to work, but if you
 
 Add this to the head section your webpage (change the library paths acorddingly), to see how it works
 
-## To Test this
+### To Test this
 
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
       <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
@@ -55,14 +52,17 @@ Add this to the head section your webpage (change the library paths acorddingly)
       });
       </script>
 
-## TODO
+### TODO
 
 * create a GreaseMonkey / Chrome Extension
 
-## resources
+### resources
 
 * [food ingredients dictionary](http://www.gourmetsleuth.com/Dictionary.aspx)
- 
 
-## Licence
+#### more info about recipes
+This library doens't need to make use of recipes microformat to work, but if you would like more info
+[Recipes Microformat](http://microformats.org/wiki/hrecipe)
+
+### Licence
 [MIT](http://joyce.mit-license.org/)
