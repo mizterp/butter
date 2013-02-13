@@ -1,4 +1,7 @@
-# [tf-idf](http://en.wikipedia.org/wiki/Tf*idf) in JavaScript 
+# Butter 
+## A [tf-idf](http://en.wikipedia.org/wiki/Tf*idf) JavaScript library
+
+[![Jruby Sinatra Opennlp](https://raw.github.com/spatzle/butter/master/butter.jpg)]()
 
 This is useful for looking at the top (most frequent words on a webpage)
 
