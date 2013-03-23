@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Butter by spatzle</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Butter</h1>
+        <p>A javascript tf-idf library.  It finds the top most frequently recurring words on a webpage.  </p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/spatzle/butter" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/spatzle/butter/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/spatzle/butter/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>Butter</h1>
+
+<h3>A <a href="http://en.wikipedia.org/wiki/Tf*idf">tf-idf</a> JavaScript library</h3>
+
+<p><a href=""><img src="https://raw.github.com/spatzle/butter/master/butter.jpg" alt="Butter"></a></p>
+
+<h3>Purpose</h3>
+
+<p>This is a javascript library that can be used for finding out (the most frequently used words on a webpage using tf-idf).   It was initially made for recognizing cooking ingredients from recipes web sites, please modify for use in other domains.</p>
+
+<h3>Requirements</h3>
+
+<ul>
+<li>jquery <a href="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js</a>
+</li>
+<li>underscoreJS <a href="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js">http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js</a> </li>
+</ul><h3>Thanks</h3>
+
+<ul>
+<li>ported from <a href="https://github.com/spatzle/tf-idf">my python tf-idf library</a> which was extended from <a href="https://github.com/timtrueman/tf-idf">TimTrueman's</a> but w/ the addition of <a href="http://nltk.org/">nltk</a>
+</li>
+<li>stemmer - <a href="http://qaa.ath.cx/porter_js_demo.html">http://qaa.ath.cx/porter_js_demo.html</a>
+</li>
+<li>sorting an object - <a href="http://wolfram.kriesing.de/blog/index.php/2008/javascript-sort-object-by-a-value">http://wolfram.kriesing.de/blog/index.php/2008/javascript-sort-object-by-a-value</a>
+</li>
+<li>stopwords library - <a href="http://tedserbinski.com/files/stopwords.js.txt">http://tedserbinski.com/files/stopwords.js.txt</a> with extensions for cooking recipe words</li>
+<li>fast dictionary look up js - <a href="http://stevehanov.ca/blog/index.php?id=120">http://stevehanov.ca/blog/index.php?id=120</a>
+</li>
+</ul><p>Add this to the head section your webpage (change the library paths acorddingly), to see how it works</p>
+
+<h3>To Test this</h3>
+
+<pre><code>    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"&gt;&lt;/script&gt;
+  &lt;script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"&gt;&lt;/script&gt;
+  &lt;script src="../lib/stopwords.js"&gt;&lt;/script&gt;
+  &lt;script src="../lib/tfidf.js"&gt;&lt;/script&gt;
+  &lt;script src="../lib/tokenize.js"&gt;&lt;/script&gt;
+  &lt;script src="../lib/corpus_tools.js"&gt;&lt;/script&gt;
+  &lt;script src="../lib/collections_tools.js"&gt;&lt;/script&gt;
+  &lt;script src="../lib/stemmer-min.js"&gt;&lt;/script&gt;
+  &lt;script src="../test_data/test_data.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+    $(function() {
+      var corpus = "";
+      // if($('li.ingredient.type').length&gt;0){
+      //  alert(getTextNodesIn('.ingredient.type').text());
+      // }
+      if($('li.ingredient').length&gt;0){ // here use recipes microformats
+        var items = getTextNodesIn('li.ingredient').text()
+        alert(items);
+      }
+      else{ // don't use recipes microformat, scan the whole text
+        corpus  = getTextNodesIn('div').text();
+        alert(analyze_web_text(corpus));
+      }
+  });
+  &lt;/script&gt;
+</code></pre>
+
+<h3>TODO</h3>
+
+<ul>
+<li>create a GreaseMonkey / Chrome Extension</li>
+</ul><h3>resources</h3>
+
+<ul>
+<li><a href="http://www.gourmetsleuth.com/Dictionary.aspx">food ingredients dictionary</a></li>
+</ul><h4>more info about recipes</h4>
+
+<p>This library doens't need to make use of recipes microformat to work, but if you would like more info
+<a href="http://microformats.org/wiki/hrecipe">Recipes Microformat</a></p>
+
+<h3>Licence</h3>
+
+<p><a href="http://joyce.mit-license.org/">MIT</a></p>
+
+<h3>changelog</h3>
+
+<p>2013-03-01  Joyce Chan  </p>
+
+<ul>
+<li>initial release</li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/spatzle">spatzle</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
