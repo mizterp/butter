@@ -67,6 +67,7 @@ This library doens't need to make use of recipes microformat to work, but if you
 ### Licence
 [MIT](http://joyce.mit-license.org/)
 
+<a name="changelog">
 ### changelog
 2013-03-01  Joyce Chan  <joyce.sz.chan at gmail.com>
 
